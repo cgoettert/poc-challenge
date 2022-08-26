@@ -8,9 +8,16 @@ import org.springframework.web.servlet.ModelAndView;
 public class FrontController {
 
     @RequestMapping("/")
-    public ModelAndView index () {
+    public ModelAndView index() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index.html");
+        return modelAndView;
+    }
+
+    @RequestMapping("/login")
+    public ModelAndView login() {
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("login.html");
         return modelAndView;
     }
 
